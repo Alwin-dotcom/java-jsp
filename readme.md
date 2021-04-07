@@ -7,6 +7,8 @@ Example for very simple HttpServlet
 <ul>
 <li>Run mvn install</li>
 <li>Run mvn tomcat7:run-war-only</li>
+<li>Open for Servlet <a href="http://localhost:8080/welcome">http://localhost:8080/welcome</a> in your Browser</li>
+<li>Open for Jsp Example <a href="http://localhost:8080/index.jsp?Alwin Fuerst">http://localhost:8080/index.jsp?Alwin Fuerst</a> in your Browser</li>
 </ul>
 </body>
 </html>
