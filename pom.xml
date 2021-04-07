@@ -17,6 +17,12 @@
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
         </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -50,9 +56,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.2</version>
+                <version>3.3.1</version>
                 <configuration>
-                    <webXml>src/main/web/WEB-INF/web.xml</webXml>
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class TestServlet extends HttpServlet {
+  PrintWriter out;
 
   public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
@@ -17,9 +18,8 @@ public class TestServlet extends HttpServlet {
 
   protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
-
+    out = resp.getWriter();
     resp.setContentType("text/html;charset=UTF-8");
-    PrintWriter out = resp.getWriter();
     try {
       out.println("<!--DOCTYPE html-->");
       out.println("<html>");
